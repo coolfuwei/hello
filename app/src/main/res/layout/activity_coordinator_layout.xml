@@ -1,0 +1,99 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#5CACEE"
+            app:statusBarScrim="@android:color/transparent"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mm"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="假设我们按照传统的事件分发去理解，
+            首先我们滑动的是下面的内容区域，
+            而移动却是外部的ViewGroup在移动，所以按照传统的方式
+            ，肯定是外部的Parent拦截了内部的Child的事件；但是，上述效果图，
+            当Parent滑动到一定程度时，Child又开始滑动了，
+            中间整个过程是没有间断的。从正常的事件分发
+            （不手动调用分发事件，不手动去发出事件）角度去做是不可能的，
+            因为当Parent拦截之后，是没有办法再把事件交给Child的，
+            事件分发，对于拦截，相当于一锤子买卖，只要拦截了，
+            当前手势接下来的事件都会交给Parent(拦截者)来处理。
+            假设我们按照传统的事件分发去理解，首先我们滑动的是下面的内容区
+            域，而移动却是外部的ViewGroup在移动，所以按照传统的方式，
+            肯定是外部的Parent拦截了内部的Child的事件；但是，上述效果图，
+            当Parent滑动到一定程度时，Child又开始滑动了，中
+            间整个过程是没有间断的。从正常的事件分发
+            （不手动调用分发事件，不手动去发出事件）角度去做是不可能的，
+            因为当Parent拦截之后，是没有办法再把事件交给Child的，
+            事件分发，对于拦截，相当于一锤子买卖，只要拦截了，
+            当前手势接下来的事件都会交给Parent(拦截者)来处理。假设我们按照传统的事件分发去理解，
+            首先我们滑动的是下面的内容区域，
+            而移动却是外部的ViewGroup在移动，所以按照传统的方式
+            ，肯定是外部的Parent拦截了内部的Child的事件；但是，上述效果图，
+            当Parent滑动到一定程度时，Child又开始滑动了，
+            中间整个过程是没有间断的。从正常的事件分发
+            （不手动调用分发事件，不手动去发出事件）角度去做是不可能的，
+            因为当Parent拦截之后，是没有办法再把事件交给Child的，
+            事件分发，对于拦截，相当于一锤子买卖，只要拦截了，
+            当前手势接下来的事件都会交给Parent(拦截者)来处理。
+            假设我们按照传统的事件分发去理解，首先我们滑动的是下面的内容区
+            域，而移动却是外部的ViewGroup在首先我们滑动的是下面的内容区域，
+            而移动却是外部的ViewGroup在移动，所以按照传统的方式
+            ，肯定是外部的Parent拦截了内部的Child的事件；但是，上述效果图，
+            当Parent滑动到一定程度时，Child又开始滑动了，
+            中间整个过程是没有间断的。从正常的事件分发
+            （不手动调用分发事件，不手动去发出事件）角度去做是不可能的，
+            因为当Parent拦截之后，是没有办法再把事件交给Child的，
+            事件分发，对于拦截，相当于一锤子买卖，只要拦截了，
+            当前手势接下来的事件都会交给Parent(拦截者)来处理。
+            假设我们按照传统的事件分发去理解，首先我们滑动的是下面的内容区
+            域，而移动却是外部的ViewGroup在移动，所以按照传统的方式，
+            肯定是外部的Parent拦截了内部的Child的事件；但是，上述效果图，
+            当Parent滑动到一定程度时，Child又开始滑动了，中
+            间整个过程是没有间断的。从正常的事件分发
+            （不手动调用分发事件，不手动去发出事件）角度去做是不可能的，
+            因为当Parent拦截之后，是没有办法再把事件交给Child的，
+            事件分发，对于拦截，相当于一锤子买卖，只要拦截了，
+            当前手势接下来的事件都会交给Parent(拦截者)来处理。" />
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

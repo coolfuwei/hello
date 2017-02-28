@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cool.hello.widget.PullLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    android:id="@+id/ll_root">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_head_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/iv_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fuwei" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <Button
+                        android:id="@+id/bt_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/selector_back_arrow"
+                        android:drawablePadding="4dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="5dp"
+                        android:text="返回"
+                        android:textColor="@drawable/xml_back_textcolor"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/call" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_name_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="fuwei"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/rl_head_container"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="90dp"
+                    android:text="移动部门"
+                    android:textColor="#4D4D4D" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/position" />
+
+                    <TextView
+                        android:id="@+id/position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#757575" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/status" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#757575" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/baseland" />
+
+                    <TextView
+                        android:id="@+id/tv_baseland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#757575" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/rl_head_container"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-35dp"
+            android:background="@drawable/withe_bg_shape">
+
+            <com.org.sleepgod.widget.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="3dp"
+                android:src="@drawable/fuwei" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="邮箱"
+                android:textColor="#4D4D4D" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:textColor="#757575" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#609D9D9D" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/telephone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="移动电话"
+                android:textColor="#4D4D4D" />
+
+            <TextView
+                android:id="@+id/tv_phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:textColor="#757575" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="家乡"
+                android:textColor="#4D4D4D" />
+
+            <TextView
+                android:id="@+id/tv_hometown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:textColor="#757575" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#609D9D9D" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="微信号"
+                android:textColor="#4D4D4D" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="#757575" />
+        </LinearLayout>
+    </LinearLayout>
+</com.cool.hello.widget.PullLinearLayout>
