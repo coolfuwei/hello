@@ -40,5 +40,16 @@
             android:layout_height="wrap_content"
             android:text="名字View"
             android:onClick="click6"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随机数移动动画"
+            android:onClick="click7"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百分比控件"
+            android:onClick="click8"/>
     </LinearLayout>
 </ScrollView>

@@ -31,6 +31,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -71,6 +72,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     private Rect mCropRect = null;
     private boolean isHasSurface = false;
     private Button mBackButton;
+    private ImageButton mFlashLight;
 
     public Handler getHandler() {
         return handler;
@@ -89,6 +91,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         setContentView(R.layout.activity_capture);
 
         mBackButton = (Button) findViewById(R.id.btn_back);
+        mFlashLight = (ImageButton) findViewById(R.id.ib_flashlight);
 
         scanPreview = (SurfaceView) findViewById(R.id.capture_preview);
         scanContainer = (RelativeLayout) findViewById(R.id.capture_container);
@@ -110,6 +113,12 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        mFlashLight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cameraManager.flashHandler();
             }
         });
     }

@@ -200,4 +200,26 @@ public class CameraManager {
         }
         return null;
     }
+
+    //提供給其他activity調用
+    public void flashHandler() {
+        //camera.startPreview();
+        Camera.Parameters parameters = camera.getParameters();
+        // 判断闪光灯当前状态來修改
+        if (Camera.Parameters.FLASH_MODE_OFF.equals(parameters.getFlashMode())) {
+            turnOn(parameters);
+        } else if (Camera.Parameters.FLASH_MODE_TORCH.equals(parameters.getFlashMode())) {
+            turnOff(parameters);
+        }
+    }
+    //开
+    private void turnOn(Camera.Parameters parameters) {
+        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+        camera.setParameters(parameters);
+    }
+    //关
+    private void turnOff(Camera.Parameters parameters) {
+        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+        camera.setParameters(parameters);
+    }
 }

@@ -47,16 +47,29 @@
             android:layout_alignParentBottom="true"
             android:layout_below="@id/capture_crop_view"
             android:background="@drawable/shadow" />
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:text="请将二维码放置条形框中"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/capture_crop_view"
             android:layout_marginTop="20dp"
-            />
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="请将二维码放置条形框中"
+                />
+            <ImageButton
+                android:id="@+id/ib_flashlight"
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/flashlight"/>
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/capture_mask_left"
             android:layout_width="wrap_content"

@@ -34,4 +34,10 @@ public class WidgetActivity extends AppCompatActivity {
     public void click6(View v){
         startActivity(new Intent(this,ColorfulHeadViewActivity.class));
     }
+    public void click7(View v){
+        startActivity(new Intent(this,CustomNumAnimViewActivity.class));
+    }
+    public void click8(View v){
+        startActivity(new Intent(this,PercentViewActivity.class));
+    }
 }
