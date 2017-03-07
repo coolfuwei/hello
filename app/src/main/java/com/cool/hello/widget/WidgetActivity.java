@@ -18,7 +18,6 @@ public class WidgetActivity extends AppCompatActivity {
     public void click1(View v){
         startActivity(new Intent(this,ColorfulProgressBarActivity.class));
     }
-
     public void click2(View v){
         startActivity(new Intent(this,FlowLayoutActivity.class));
     }
@@ -39,5 +38,8 @@ public class WidgetActivity extends AppCompatActivity {
     }
     public void click8(View v){
         startActivity(new Intent(this,PercentViewActivity.class));
+    }
+    public void click9(View v){
+        startActivity(new Intent(this,LineChartViewActivity.class));
     }
 }

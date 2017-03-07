@@ -50,7 +50,8 @@
         <activity android:name=".greenDB.GreenDaoActivity" />
         <activity android:name=".widget.ColorfulHeadViewActivity" />
         <activity android:name=".widget.CustomNumAnimViewActivity" />
-        <activity android:name=".widget.PercentViewActivity"></activity>
+        <activity android:name=".widget.PercentViewActivity" />
+        <activity android:name=".widget.LineChartViewActivity"></activity>
     </application>
 
 </manifest>

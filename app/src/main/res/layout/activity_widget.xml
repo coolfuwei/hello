@@ -51,5 +51,11 @@
             android:layout_height="wrap_content"
             android:text="百分比控件"
             android:onClick="click8"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折线图"
+            android:onClick="click9"/>
     </LinearLayout>
 </ScrollView>

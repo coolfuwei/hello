@@ -12,16 +12,15 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.cool.hello.R;
+import com.org.sleepgod.widget.SignTouchView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.security.Permission;
 
 public class SignActivity extends AppCompatActivity {
 
-    private TouchView mTouchView;
+    private SignTouchView mSignTouchView;
     private Bitmap bitmap;
     String imagePath;
 
@@ -36,7 +35,7 @@ public class SignActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mTouchView = (TouchView) findViewById(R.id.touchView);
+        mSignTouchView = (SignTouchView) findViewById(R.id.touchView);
     }
 
     ////////////////////////////////////////////////////////////////////////////
@@ -47,7 +46,7 @@ public class SignActivity extends AppCompatActivity {
      * @param view
      */
     public void save(View view){
-        bitmap = mTouchView.getBitmap();
+        bitmap = mSignTouchView.getBitmap();
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
             saveToSdCard();
         }else {
@@ -72,7 +71,7 @@ public class SignActivity extends AppCompatActivity {
      * @param view
      */
     public void clear(View view){
-        mTouchView.clear();
+        mSignTouchView.clear();
     }
 
     /**
@@ -80,7 +79,7 @@ public class SignActivity extends AppCompatActivity {
      * @param view
      */
     public void cancel(View view){
-        mTouchView.clear();
+        mSignTouchView.clear();
         finish();
     }
 

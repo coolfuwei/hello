@@ -55,4 +55,10 @@
         <attr name="percentTextSize" format="dimension"/>
         <attr name="percentTextColor" format="color"/>
     </declare-styleable>
+    
+    <declare-styleable name="LineChartView">
+        <attr name="lineColor" format="color"/>
+        <attr name="LineChartTextColor" format="color"/>
+        <attr name="LinePointColor" format="color"/>
+    </declare-styleable>
 </resources>

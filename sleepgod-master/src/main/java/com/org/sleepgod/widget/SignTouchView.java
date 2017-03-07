@@ -1,4 +1,4 @@
-package com.cool.hello.sign;
+package com.org.sleepgod.widget;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,10 +12,11 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
+ *  在白板上实现签名功能
  * Created by cool on 2017/2/7.
  */
 
-public class TouchView extends View {
+public class SignTouchView extends View {
 
     private int mWidth;//屏幕的宽
     private int mHight;//屏幕的高
@@ -24,15 +25,15 @@ public class TouchView extends View {
     private Bitmap mBitmap;
     private Canvas mCanvas;
 
-    public TouchView(Context context) {
+    public SignTouchView(Context context) {
         this(context, null);
     }
 
-    public TouchView(Context context, AttributeSet attrs) {
+    public SignTouchView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public TouchView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public SignTouchView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
