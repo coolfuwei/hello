@@ -57,5 +57,11 @@
             android:layout_height="wrap_content"
             android:text="折线图"
             android:onClick="click9"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆形进度条"
+            android:onClick="click10"/>
     </LinearLayout>
 </ScrollView>

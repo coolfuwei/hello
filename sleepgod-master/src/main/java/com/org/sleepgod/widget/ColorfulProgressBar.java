@@ -102,8 +102,9 @@ public class ColorfulProgressBar extends View {
         Rect rect = new Rect();
         mTextPaint.getTextBounds(text, 0, text.length(), rect);
         textWith = rect.right - rect.left;
+        Paint.FontMetricsInt fontMetricsInt = mTextPaint.getFontMetricsInt();
         int x = (int) (((float) mCurrentProgress / mTotalProgress) * width + mProgressTextOffset);
-        int y =  hight/2 + (rect.bottom - rect.top)/2;
+        int y =  hight/2 - (fontMetricsInt.ascent + fontMetricsInt.descent)/2;
 
         if(x >= width-textWith){
             x = width - textWith;

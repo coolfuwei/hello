@@ -61,4 +61,25 @@
         <attr name="LineChartTextColor" format="color"/>
         <attr name="LinePointColor" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <!-- 圆半径 -->
+        <attr name="CricleRadius" format="dimension"/>
+        <!-- 弧线宽度 -->
+        <attr name="CircleArcWidth" format="dimension"/>
+        <!-- 刻度个数 -->
+        <attr name="CircleScaleCount" format="integer" />
+        <!-- 渐变起始颜色 -->
+        <attr name="CircleStartColor" format="color" />
+        <!-- 渐变终止颜色 -->
+        <attr name="CircleEndColor" format="color" />
+        <!-- 标签说明文本 -->
+        <attr name="CircleLabelText" format="string" />
+        <!-- 文本颜色 -->
+        <attr name="CircleTextColor" format="color" />
+        <!-- 百分比文本字体大小 -->
+        <attr name="CircleProgressTextSize" format="dimension" />
+        <!-- 标签说明字体大小 -->
+        <attr name="CircleLabelTextSize" format="dimension" />
+    </declare-styleable>
 </resources>

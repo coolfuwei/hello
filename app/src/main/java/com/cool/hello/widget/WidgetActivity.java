@@ -42,4 +42,7 @@ public class WidgetActivity extends AppCompatActivity {
     public void click9(View v){
         startActivity(new Intent(this,LineChartViewActivity.class));
     }
+    public void click10(View v){
+        startActivity(new Intent(this,CircleProgressActivity.class));
+    }
 }

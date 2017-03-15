@@ -1,6 +1,7 @@
 package com.cool.hello.widget;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -22,6 +23,8 @@ public class LineChartViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line_chart_view);
+        ActionBar supportActionBar = getSupportActionBar();
+        supportActionBar.setTitle(getClass().getSimpleName());
         mLineChartView = (LineChartView) findViewById(R.id.lcv_view);
         mResultTextView = (TextView) findViewById(R.id.tv_result);
         mLineChartView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {

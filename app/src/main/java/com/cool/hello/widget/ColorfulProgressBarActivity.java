@@ -1,8 +1,10 @@
 package com.cool.hello.widget;
 
 import android.os.SystemClock;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.cool.hello.R;
@@ -19,6 +21,8 @@ public class ColorfulProgressBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colorful_progress_bar);
+        ActionBar supportActionBar = getSupportActionBar();
+        supportActionBar.setTitle(getClass().getSimpleName());
         prefectProgressBar = (ColorfulProgressBar) findViewById(R.id.ppb);
         prefectProgressBar2 = (ColorfulProgressBar) findViewById(R.id.ppb2);
         prefectProgressBar3 = (ColorfulProgressBar) findViewById(R.id.ppb3);
