@@ -37,11 +37,12 @@ greendao {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
+    compile project(':sleepgod-master')
+    compile project(path: ':libzxing')
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.blankj:utilcode:1.2.1'
     compile 'com.android.support:design:25.0.0'
-    compile project(':sleepgod-master')
-    compile project(path: ':libzxing')
     compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }

@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.cool.hello.alertDialog.DialogActivity;
 import com.cool.hello.common.LollipopActivity;
+import com.cool.hello.effect.EffectActivity;
 import com.cool.hello.greenDB.GreenDaoActivity;
 import com.cool.hello.scan.ScanActivity;
 import com.cool.hello.sign.SignActivity;
@@ -54,5 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void click8(View v) {
         startActivity(new Intent(this, GreenDaoActivity.class));
+    }
+    public void click9(View v) {
+        startActivity(new Intent(this, EffectActivity.class));
     }
 }
